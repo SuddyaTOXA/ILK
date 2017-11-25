@@ -329,15 +329,17 @@ div.wpcf7-validation-errors {
                 font-size: 16px;
                 text-transform: uppercase;
             }
+            body.home .main-nav .menu-item-home > a {
+                color: #000000;
+            }
             .main-nav a:hover,
             .main-nav a:focus,
             .main-nav .current-menu-item > a,
-            .main-nav .current-menu-ancestor > a {
+            .main-nav .current-menu-ancestor > a,
+            body.home .main-nav .menu-item-home > a:hover,
+            body.home .main-nav .menu-item-home > a:focus {
                 color: #FFB72B;
                 text-decoration: none;
-            }
-            body.home .main-nav .menu-item-home > a {
-                color: #000000;
             }
 
             .sub-menu {
