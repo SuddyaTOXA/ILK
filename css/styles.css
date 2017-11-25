@@ -262,13 +262,13 @@ div.wpcf7-validation-errors {
 .wrapper {
     position: relative;
     min-height: 100%;
-    margin-bottom: -522px;
+    margin-bottom: -523px;
 }
 .wrapper:after {
     content: '';
     display: block;
     width: 100%;
-    height: 522px;
+    height: 523px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -335,6 +335,9 @@ div.wpcf7-validation-errors {
             .main-nav .current-menu-ancestor > a {
                 color: #FFB72B;
                 text-decoration: none;
+            }
+            body.home .main-nav .menu-item-home > a {
+                color: #000000;
             }
 
             .sub-menu {
