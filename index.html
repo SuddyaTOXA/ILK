@@ -839,12 +839,27 @@
                                         <input type="hidden" name="_wpcf7_container_post" value="0">
                                     </div>
                                     <ul class="footer-form-list">
-                                        <li><span class="wpcf7-form-control-wrap your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style" aria-required="true" aria-invalid="false" placeholder="Name"></span></li>
-                                        <li><span class="wpcf7-form-control-wrap your-phone"><input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel input-style" aria-required="true" aria-invalid="false" placeholder="Phone"></span></li>
-                                        <li><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="1" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required input-style" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span></li>
+                                        <li>
+                                            <span class="wpcf7-form-control-wrap your-name">
+                                                <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-style" aria-required="true" aria-invalid="false" placeholder="Name">
+                                                <!--<span role="alert" class="wpcf7-not-valid-tip">The field is required.</span>-->
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="wpcf7-form-control-wrap your-phone">
+                                                <input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel input-style" aria-required="true" aria-invalid="false" placeholder="Phone">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span class="wpcf7-form-control-wrap your-message">
+                                                <textarea name="your-message" cols="40" rows="1" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required input-style" aria-required="true" aria-invalid="false" placeholder="Message"></textarea>
+                                            </span>
+                                        </li>
                                     </ul>
                                     <div class="footer-btn-box"><input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit btn"><span class="ajax-loader"></span></div>
-                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                    <div class="wpcf7-response-output wpcf7-display-none wpcf7-validation-errors">
+
+                                    </div>
                                 </form>
                             </div>
                         </div>

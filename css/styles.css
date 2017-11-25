@@ -235,10 +235,25 @@ a.btn:focus,
 #footer .input-style:-moz-placeholder { color: #ffffff; }
 
 textarea.input-style {
-    /*height: 37px;*/
     max-width:100%;
     line-height: 1.2;
-    resize: none;
+    resize: none;       
+}
+span.wpcf7-not-valid-tip {
+    display: block;
+    padding-top: 4px;
+    color: #f00;
+    font-size: 14px;
+}
+
+div.wpcf7-response-output {
+    text-align: center;
+    margin: 20px 0 0;
+    font-size: 14px;
+}
+
+div.wpcf7-validation-errors {
+    border-width: 1px;
 }
 
 /*----------------------------------------------------------------------------------*/
