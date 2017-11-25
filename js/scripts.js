@@ -6,4 +6,7 @@ jQuery(document).ready(function($) {
         easing: 'easeInQuad', // Easing pattern to use
         offset: 50 // Integer. How far to offset the scrolling anchor location in pixels
     });
+
+    autosize($('textarea.input-style'));
+
 });
