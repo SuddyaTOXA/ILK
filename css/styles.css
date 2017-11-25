@@ -513,16 +513,17 @@ textarea:-moz-placeholder {
                 width: 25%;
                 padding: 0 10px;
             }
-            .footer-list > li:first-child {
+            .footer-list > li.coll-get {
                 width: 33.8%;
             }
-            .footer-list > li:nth-child(2) {
+            .footer-list > li.coll-website {
                 width: 16.6%;
             }
-            .footer-list > li:nth-child(3) {
+            .footer-list > li.coll-legal {
                 width: 16.8%;
             }
-            .footer-list > li:nth-child(4) {
+            .footer-list > li.coll-form {
+                float: right;
                 width: 32.8%;
             }
             .footer-list > li {}
@@ -572,6 +573,11 @@ textarea:-moz-placeholder {
                         color: #FFB72B;
                         text-decoration: none;
                     }
+                    .footer-box > ul > li > a:hover:before,
+                    .footer-box > ul > li > a:focus:before {
+                        background-color: #FFB72B;
+                    }
+
                 .footer-box.contact {
                     padding-top: 9px;
                 }
