@@ -394,6 +394,7 @@ div.wpcf7-validation-errors {
 .section-banner {
     padding: 50px 0 48px;
     text-align: center;
+    background-color: #ebf7ff;
 }
     .banner-box {
         max-width: 400px;
@@ -414,6 +415,7 @@ div.wpcf7-validation-errors {
                 }
                     .reward-img-box img {
                         max-width: 100%;
+                        height: auto;
                     }
         .banner-title {
             position: relative;
@@ -480,7 +482,7 @@ div.wpcf7-validation-errors {
                     background-color: #60bdea;
                 }
                 li.s-dribbble a {
-                    background-color: #E7B2C9;
+                    background-color: #d77ca5;
                 }
                 li.s-vimeo a {
                     background-color: #83DDE7;
@@ -552,6 +554,9 @@ div.wpcf7-validation-errors {
                 width: 33.33%;
                 padding: 0 15px;
             }
+            .live-lists > li:nth-child(3n+1) {
+                clear: both;
+            }
                 .live-list {}
                     .live-list > li {
                         border-bottom: 1px solid #e8e8e8;
@@ -590,7 +595,7 @@ div.wpcf7-validation-errors {
                                     line-height: 34px;
                                     text-align: center;
                                     border: 2px solid #c8fffe;
-                                    border-color: #ffffff;
+                                    border-color: transparent;
                                     -webkit-border-radius: 50%;
                                     -khtml-border-radius: 50%;
                                     -moz-border-radius: 50%;
@@ -601,6 +606,7 @@ div.wpcf7-validation-errors {
                                     a.live-logo img,
                                     .live-logo img {
                                         max-width: 100%;
+                                        height: auto;
                                         vertical-align: middle;
                                     }
                                 a.live-title,
@@ -679,6 +685,7 @@ div.wpcf7-validation-errors {
                 }
                     .partners-box img {
                         max-width: 100%;
+                        height: auto;
                         vertical-align: middle;
                     }
 /*----------------------------------------------------------------------------------*/
