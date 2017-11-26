@@ -4,6 +4,13 @@ jQuery(document).ready(function($) {
         event.preventDefault();
     });
 
+    // for wrappeng section title in content
+    $('.section-content').find('.section-title, h1, h2, h3').each(function () {
+        if (!$(this).parent('.section-title-box').length) {
+            $(this).wrap('<div class="section-title-box"></div>');
+        }
+    });
+
 	// for smooth scroll
     if (typeof smoothScroll !== 'undefined') {
         smoothScroll.init({
@@ -24,11 +31,12 @@ jQuery(document).ready(function($) {
         var url = $(this).data('href');
 
             window.open(url ,'_blank');
-    })
+    });
 
     //for news box
-    $(window).on('load, resize', function () {
-        if($('.news-box').length) {
+    if($('.news-box').length) {
+        $(window).on('load, resize', function () {
+
             var box = $('.news-box:not(.first)'),
                 innerBox = box.find('.news-inner-box'),
                 maxHeight = 0;
@@ -39,6 +47,6 @@ jQuery(document).ready(function($) {
                     }
                 });
                 box.height(maxHeight);
-        }
-    })
+        });
+    }
 });
