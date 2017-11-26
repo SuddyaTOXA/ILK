@@ -58,10 +58,10 @@
 }
 @media all and (max-width: 860px) {
     .wrapper {
-        margin-bottom: -851px;
+        margin-bottom: 0;
     }
     .wrapper:after {
-        height: 851px;
+        display: none;
     }
     .news-list  > li {
         width: 50%;
@@ -109,12 +109,6 @@
     .ico-table tbody {
         font-size: 15px;
     }
-    .wrapper {
-        margin-bottom: -845px;
-    }
-    .wrapper:after {
-        height: 845px;
-    }
     .ico-table-mob {
         display: block;
     }
@@ -135,17 +129,12 @@
 @media all and (max-width: 580px) {
     .news-list  > li {
         width: 100%;
+        margin-bottom: 25px;
     }
     .news-list > li:first-child .news-box,
     .news-box {
         min-height: 180px;
         padding: 24px 10px 28px;
-    }
-    .wrapper {
-        margin-bottom: -851px;
-    }
-    .wrapper:after {
-        height: 851px;
     }
     .footer-list > li {
         float: none;

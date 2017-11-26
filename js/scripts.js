@@ -12,11 +12,20 @@ jQuery(document).ready(function($) {
     });
 
     // for wrappeng section title in content
-    $('.section-content').find('.section-title, h1, h2, h3').each(function () {
+    var content = $('.section-content');
+    content.find('.section-title, h1').each(function () {
         if (!$(this).parent('.section-title-box').length) {
             $(this).wrap('<div class="section-title-box"></div>');
         }
     });
+    content.find('.section-sub-title, h2, h3').each(function () {
+        if (!$(this).parent('.section-title-box').length) {
+            $(this).wrap('<div class="section-sub-title-box"></div>');
+        }
+    });
+
+    // for VC container
+    $( ".vc_row:not(.vc_inner)" ).wrapInner( "<div class='container'></div>" );
 
 	// for smooth scroll
     if (typeof smoothScroll !== 'undefined') {
@@ -35,7 +44,8 @@ jQuery(document).ready(function($) {
 
     //for table link
     $('.ico-table tbody tr').on('click', function () {
-        var url = $(this).data('href');
+        var url = $(this).data('href'),
+            target = $(this).data('target');
 
             window.open(url ,'_blank');
     });
