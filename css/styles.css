@@ -661,11 +661,94 @@ div.wpcf7-validation-errors {
                     }
 /*-------------------------------------UPCOMING-TOKEN------------------------------*/
 .section-upcoming-token {
-    padding: 20px 0 40px;
+    padding: 20px 0 68px;
     background-color: #EBF7FF;
 }
+    .ico-table {
+        width: 100%;
+        background-color: #ffffff;
+        border-bottom: 1px solid #78B5E3;
+    }
+        .ico-table thead {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: #2C4253;
 
-/*-------------------------------------BANNER--------------------------------------*/
+        }
+            .ico-table thead tr {}
+                .ico-table thead th {
+                    padding: 14px 6px 14px;
+                    font-weight: 400;
+                }
+                .ico-table thead tr th:first-child {
+                    width: 31.6%;
+                }
+                .ico-table thead tr th:nth-child(2) {
+                    width: 25.8%;
+                }
+                .ico-table thead tr th:nth-child(3) {
+                    width: 25.6%;
+                }
+        .ico-table tbody {}
+            .ico-table tbody tr {
+                height: 64px;
+                cursor: pointer;
+            }
+            .ico-table tbody tr:hover td {
+                background-color: #f8f8f8;
+            }
+            .ico-table tbody tr:nth-child(odd):hover td {
+                background-color: #deedf9;
+            }
+            .ico-table tbody tr:nth-child(odd) {
+                height: 62px;
+                background-color: #ddecf8;
+            }
+                .ico-table tbody td {
+                    padding: 5px 19px 2px;
+                    border: 1px solid #78B5E3;
+                    border-top: none;
+                    border-bottom: none;
+                    vertical-align: middle;
+                    -webkit-transition: 0.35s;
+                    -moz-transition: 0.35s;
+                    -o-transition: 0.35s;
+                    transition: 0.35s;
+                }
+                .ico-table tbody td > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .ico-table tbody tr td:first-child {
+                    width: 31.6%;
+                    padding-left: 6px;
+                }
+                .ico-table tbody tr td:nth-child(2) {
+                    width: 25.8%;
+                }
+                .ico-table tbody tr td:nth-child(3) {
+                    width: 25.6%;
+                }
+                .ico-table tbody tr td:last-child {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                    .ico-img-wrap {
+                        display: inline-block;
+                        width: 59px;
+                        /*height: auto;*/
+                        padding-right: 6px;
+                    }
+
+                        .ico-img-wrap img {
+                            max-width: 100%;
+                            height: auto;
+                        }
+/*-------------------------------------EVENT---------------------------------------*/
+.section-event {
+    padding: 38px 0 48px;
+}
 /*-------------------------------------PARTNERS------------------------------------*/
 .section-partners {
     padding: 71px 0 44px;

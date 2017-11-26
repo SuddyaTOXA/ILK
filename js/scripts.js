@@ -19,4 +19,12 @@ jQuery(document).ready(function($) {
         autosize( $('textarea.input-style') );
     }
 
+    //for table link
+    $('.ico-table tbody tr').on('click', function () {
+        var url = $(this).data('href');
+
+            window.open(url ,'_blank');
+    })
+
+
 });
