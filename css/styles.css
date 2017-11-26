@@ -553,7 +553,7 @@ div.wpcf7-validation-errors {
             }
         .live-lists {
             overflow: hidden;
-            margin: 60px -15px 0;
+            margin: 0 -15px 0;
         }
             .live-lists > li {
                 float: left;
@@ -598,10 +598,11 @@ div.wpcf7-validation-errors {
                                     display: inline-block;
                                     width: 40px;
                                     height: 40px;
-                                    line-height: 34px;
+                                    padding: 1px;
+                                    line-height: 32px;
                                     text-align: center;
                                     border: 2px solid #c8fffe;
-                                    border-color: transparent;
+                                    background-color: #ffffff;
                                     -webkit-border-radius: 50%;
                                     -khtml-border-radius: 50%;
                                     -moz-border-radius: 50%;
@@ -688,8 +689,9 @@ div.wpcf7-validation-errors {
                 .partners-box {
                     width: 170px;
                     height: 120px;
+                    padding: 3px;
                     text-align: center;
-                    line-height: 120px;
+                    line-height: 114px;
                     background-color: #ffffff;
                 }
                     .partners-box img {
