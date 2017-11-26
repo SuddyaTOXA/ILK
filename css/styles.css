@@ -504,6 +504,8 @@ div.wpcf7-validation-errors {
                 line-height: 1;
                 text-transform: uppercase;
             }
+            .mobile-menu .current-menu-item > a,
+            .mobile-menu .current-menu-ancestor > a,
             .mobile-menu > li a:hover,
             .mobile-menu > li a:focus {
                 color: #FFB72B;
