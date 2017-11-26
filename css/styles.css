@@ -425,6 +425,7 @@ div.wpcf7-validation-errors {
 /*----------------------------------------------------------------------------------*/
 .section {
     position: relative;
+    padding: 40px 0 62px;
     background-color: #ffffff;
     background-size: cover;
     background-position: center;
@@ -625,9 +626,7 @@ div.wpcf7-validation-errors {
                     }
             .social-links {}
 /*-------------------------------------LIVE-TOKEN----------------------------------*/
-.section-live-token {
-    padding: 36px 0 70px;
-}
+.section-live-token {}
     .section-live-token .container {
 
     }
@@ -738,7 +737,6 @@ div.wpcf7-validation-errors {
                     }
 /*-------------------------------------UPCOMING-TOKEN------------------------------*/
 .section-upcoming-token {
-    padding: 20px 0 68px;
     background-color: #EBF7FF;
 }
     .ico-table {
@@ -823,13 +821,9 @@ div.wpcf7-validation-errors {
                             height: auto;
                         }
 /*-------------------------------------EVENT---------------------------------------*/
-.section-event {
-    padding: 38px 0 48px;
-}
+.section-event {}
 /*-------------------------------------NEWS----------------------------------------*/
-.section-news {
-    padding: 70px 0 70px;
-}
+.section-news {}
     .news-list {
         overflow: hidden;
         margin: 0 -15px -32px;
@@ -930,13 +924,11 @@ div.wpcf7-validation-errors {
                 }
 /*-------------------------------------PARTNERS------------------------------------*/
 .section-partners {
-    padding: 71px 0 44px;
     background-color: #000000;
 }
     .partners-list {
         max-width: 798px;
-        margin: 0 auto;
-
+        margin: 0 auto -26px;
     }
         .partners-list > li {
             display: inline-block;
