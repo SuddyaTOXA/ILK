@@ -44,7 +44,8 @@
         margin: 0 -8px -40px;
     }
     .live-lists > li {
-        width: 50%;
+        width: -webkit-calc(50% - 3px);
+        width: calc(50% - 3px);
         margin-bottom: 40px;
         padding: 0 8px;
     }
@@ -114,11 +115,16 @@
     .wrapper:after {
         height: 845px;
     }
+    .ico-table-mob {
+        display: block;
+    }
+    .ico-table-wrap {
+        display: none;
+    }
 }
 
 @media all and (max-width: 640px) {
     .live-lists > li {
-        float: none;
         width: 100%;
     }
     .live-cell.logo-cell {
@@ -167,5 +173,12 @@
             .partners-box {
                 width: 100%;
             }
-
+    .ico-table-mob-cell.ico-name {
+        width: 110px;
+    }
+}
+@media all and (max-width: 380px) {
+    .ico-table-mob-box {
+        font-size: 12px;
+    }
 }

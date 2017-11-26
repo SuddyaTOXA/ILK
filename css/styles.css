@@ -802,16 +802,20 @@ div.wpcf7-validation-errors {
         .live-lists {
             overflow: hidden;
             margin: 0 -15px;
+            text-align: center;
         }
             .live-lists > li {
-                float: left;
-                width: 33.33%;
+                display: inline-block;
+                width: -webkit-calc(33.33% - 3px);
+                width: calc(33.33% - 3px);
                 padding: 0 15px;
             }
             .live-lists > li:nth-child(3n+1) {
                 clear: both;
             }
-                .live-list {}
+                .live-list {
+                    text-align: left;
+                }
                     .live-list > li {
                         border-bottom: 1px solid #e8e8e8;
                     }
@@ -989,6 +993,64 @@ div.wpcf7-validation-errors {
                             max-width: 100%;
                             height: auto;
                         }
+    .ico-table-mob-list {
+        border: 1px solid #78B5E3;
+    }
+        .ico-table-mob-list > li:nth-child(odd) a {
+            background-color: #ddecf8;
+        }
+        .ico-table-mob-list > li:nth-child(odd) a:hover,
+        .ico-table-mob-list > li:nth-child(odd) a:focus {
+            background-color: #deedf9;
+        }
+        .ico-table-mob-list > li:nth-child(even) a:hover,
+        .ico-table-mob-list > li:nth-child(even) a:focus {
+            background-color: #f8f8f8;
+        }
+            .ico-table-mob {
+                display: none;
+                width: 100%;
+                background-color: #ffffff;
+            }
+                .ico-table-mob a {
+                    display: block;
+                }
+                .ico-table-mob a:hover,
+                .ico-table-mob a:focus {
+                    text-decoration: none;
+                }
+            .ico-table-mob-box {
+                display: table;
+                width: 100%;
+                font-size: 15px;
+            }
+                .ico-table-mob-cell {
+                    display: table-cell;
+                    padding: 5px;
+                    vertical-align: middle;
+                }
+                .ico-table-mob-cell > *:last-child {
+                    margin-bottom: 0;
+                }
+                    .ico-table-mob-cell.ico-name {
+                        width: 40%;
+                        text-align: center;
+                        line-height: 1.1;
+                        border-right: 1px solid #78B5E3;
+                    }
+                        .ico-table-mob .ico-img-wrap {
+                            display: block;
+                            margin: 0 auto;
+                        }
+                .ico-table-right {
+                    display: block;
+                    line-height: 1.1;
+                    margin-bottom: 4px;
+                }
+                    .ico-table-right  span {
+                        padding-right: 2px;
+                        font-weight: 700;
+                    }
 /*-------------------------------------EVENT---------------------------------------*/
 .section-event {}
 /*-------------------------------------NEWS----------------------------------------*/
