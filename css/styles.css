@@ -141,6 +141,24 @@ a.btn:focus,
     color: #FFB72B;
     border-color: #FFB72B;
     background-color: transparent;
+    text-decoration: none;
+}
+a.btn.small,
+.btn.small {
+    font-size: 14px;
+    font-weight: 400;
+}
+a.btn.inverse,
+.btn.inverse {
+    color: #ffffff;
+    background-color: transparent;
+    border-color: #FFB72B;
+}
+a.btn.inverse:hover,
+a.btn.inverse:focus,
+.btn.inverse:hover,
+.btn.inverse:focus {
+    background-color: #FFB72B;
 }
 .btn-jump-to-content {
     position: absolute;
@@ -237,7 +255,7 @@ a.btn:focus,
 textarea.input-style {
     max-width:100%;
     line-height: 1.2;
-    resize: none;       
+    resize: none;
 }
 
 span.wpcf7-not-valid-tip {
@@ -749,6 +767,108 @@ div.wpcf7-validation-errors {
 .section-event {
     padding: 38px 0 48px;
 }
+/*-------------------------------------NEWS----------------------------------------*/
+.section-news {
+    padding: 70px 0 70px;
+}
+    .news-list {
+        overflow: hidden;
+        margin: 0 -15px -36px;
+    }
+        .news-list  > li {
+            float: left;
+            width: 33.33%;
+            margin-bottom: 36px;
+            padding: 0 15px;
+        }
+        .news-list > li:first-child {
+            width: 100%;
+        }
+        .news-list > li:nth-child(4n + 1) {
+            clear: both;
+         }
+            .news-list > li > a:hover,
+            .news-list > li > a:focus {
+                text-decoration: none;
+            }
+            .news-list > li:not(:first-child) > a:hover .news-title,
+            .news-list > li:not(:first-child) > a:focus .news-title {
+                color: #FFB72B;
+            }
+            .news-box {
+                overflow: hidden;
+                position: relative;
+                min-height: 210px;
+                padding: 28px 30px 30px;
+                color: #ffffff;
+                background-color: #8d8d8d;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .news-box:after {
+                position: absolute;
+                z-index: 5;
+                content: '';
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, .5);
+            }
+                .news-list > li:first-child .news-box:after {
+                    width: 701px;
+                    background: rgba(0,0,0,0.75);
+                    background: -moz-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 65%, rgba(0,0,0,0) 100%);
+                    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,0,0,0.75)), color-stop(65%, rgba(0,0,0,0.65)), color-stop(100%, rgba(0,0,0,0)));
+                    background: -webkit-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 65%, rgba(0,0,0,0) 100%);
+                    background: -o-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 65%, rgba(0,0,0,0) 100%);
+                    background: -ms-linear-gradient(left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 65%, rgba(0,0,0,0) 100%);
+                    background: linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.65) 65%, rgba(0,0,0,0) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+                }
+                .news-box > * {
+                    position: relative;
+                    z-index: 10;
+                }
+                .news-box > *:last-child {
+                    margin-bottom: 0;
+                }
+            .news-list > li:first-child .news-box {
+                padding: 28px 28px 29px;
+            }
+                .news-title {
+                    max-width: 480px;
+                    margin-bottom: 6px;
+                    font: 18px/1.2 "Evolventa-Bold", Arial, sans-serif;
+                    -webkit-transition: 0.2s;
+                    -moz-transition: 0.2s;
+                    -o-transition: 0.2s;
+                    transition: 0.2s;
+                }
+                .news-list > li:first-child .news-title {
+                    font-size: 24px;
+                }
+                .news-date {
+                    display: block;
+                    margin-bottom: 6px;
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+                .news-desc {
+                    margin-bottom: 26px;
+                    max-width: 440px;
+                    line-height: 1.2;
+                    word-spacing: -.09em;
+
+                }
+                    .news-desc > *:not(:last-child) {
+                        margin-bottom: 16px;
+                    }
+                .news-box a.btn,
+                .news-box .btn {
+                    margin-left: 4px;
+                }
 /*-------------------------------------PARTNERS------------------------------------*/
 .section-partners {
     padding: 71px 0 44px;
