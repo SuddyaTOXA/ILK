@@ -239,19 +239,25 @@ textarea.input-style {
     line-height: 1.2;
     resize: none;       
 }
+
 span.wpcf7-not-valid-tip {
     display: block;
     padding-top: 4px;
     color: #f00;
     font-size: 14px;
 }
-
+.input-style.wpcf7-not-valid {
+    /*border-color: #f00;*/
+}
 div.wpcf7-response-output {
     text-align: center;
     margin: 20px 0 0;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.25;
 }
-
+#footer div.wpcf7-response-output {
+    color: #ffffff;
+}
 div.wpcf7-validation-errors {
     border-width: 1px;
 }
@@ -674,6 +680,9 @@ div.wpcf7-validation-errors {
             margin-bottom: 26px;
             padding: 0 13px;
             vertical-align: top;
+        }
+        .partners-list > li:nth-child(4n+1) {
+            clear: both;
         }
             .partners-list > li a {}
                 .partners-box {
