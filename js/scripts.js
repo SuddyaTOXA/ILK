@@ -26,5 +26,19 @@ jQuery(document).ready(function($) {
             window.open(url ,'_blank');
     })
 
+    //for news box
+    $(window).on('load, resize', function () {
+        if($('.news-box').length) {
+            var box = $('.news-box:not(.first)'),
+                innerBox = box.find('.news-inner-box'),
+                maxHeight = 0;
 
+                innerBox.each(function () {
+                    if ( $(this).outerHeight() > maxHeight ) {
+                        maxHeight = $(this).outerHeight();
+                    }
+                });
+                box.height(maxHeight);
+        }
+    })
 });
