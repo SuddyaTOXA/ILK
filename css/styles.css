@@ -322,10 +322,12 @@ div.wpcf7-validation-errors {
     z-index: 9999;
     width: 100%;
     background-color: #ffffff;
-    -webkit-box-shadow: 0 5px 10px 0 rgba(1, 1, 1, 0.35);
-    -moz-box-shadow: 0 5px 10px 0 rgba(1, 1, 1, 0.35);
-    box-shadow: 0 5px 10px 0 rgba(1, 1, 1, 0.35);
+    -webkit-box-shadow: 0 3px 10px 0 rgba(1, 1, 1, 0.15);
+    -moz-box-shadow: 0 3px 10px 0 rgba(1, 1, 1, 0.15);
+    box-shadow: 0 3px 10px 0 rgba(1, 1, 1, 0.15);
     -webkit-transition: 0.35s;
+    -moz-transition: 0.35s;
+    transition: 0.35s;
 }
     #header .container {
         max-width: 1144px;
