@@ -1,23 +1,17 @@
 /*--------------------------------------MEDIA-----------------------------------------*/
-@media all and (max-width: 1280px) {
-
-}
-@media all and (max-width: 1200px) {
-
-}
 @media all and (max-width: 1024px) {
-#header {
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 3px 0 0;
-}
+    #header {
+        overflow: hidden;
+        position: fixed;
+        left: 0;
+        top: 0;
+        padding: 3px 0 0;
+    }
     #main-content {
         margin-top: 55px;
     }
     .logo {
-        max-width: 53.5px;
+        max-width: 54px;
     }
         .logo img {
             padding-bottom: 0;
@@ -35,10 +29,7 @@
     .ico-img-wrap {
         padding-right: 0;
     }
-
 }
-
-
 @media all and (max-width: 991px) {
     .live-lists {
         margin: 0 -8px -40px;
@@ -81,9 +72,6 @@
     }
 }
 @media all and (max-width: 767px) {
-    .container {
-        padding: 0 15px;
-    }
     .ico-table-wrap {
         overflow-x: scroll;
     }
@@ -92,9 +80,10 @@
         }
     .footer-title,
     .section-title,
+    .section-content .section-title,
     .section-content h1,
     .banner-title {
-        font-size: 28px;
+        font-size: 36px;
     }
     .news-list > li:first-child .news-title {
         font-size: 22px;
@@ -115,8 +104,10 @@
     .ico-table-wrap {
         display: none;
     }
+    .section-content .content-sub-box {
+        padding-left: 10px;
+    }
 }
-
 @media all and (max-width: 640px) {
     .live-lists > li {
         width: 100%;
@@ -147,6 +138,13 @@
     }
     .footer-box.form {
         margin: 0 auto;
+    }
+    .section-content img.alignleft,
+    .section-content img.alignright {
+        float: none;
+        display: block;
+        margin: 5px auto 22px;
+        max-width: none;
     }
 }
 @media all and (max-width: 480px) {

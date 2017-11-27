@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
             $(this).wrap('<div class="section-title-box"></div>');
         }
     });
-    content.find('.section-sub-title, h2, h3').each(function () {
+    content.find('.section-sub-title, h2, h3, h4').each(function () {
         if (!$(this).parent('.section-title-box').length) {
             $(this).wrap('<div class="section-sub-title-box"></div>');
         }
@@ -45,9 +45,9 @@ jQuery(document).ready(function($) {
     //for table link
     $('.ico-table tbody tr').on('click', function () {
         var url = $(this).data('href'),
-            target = $(this).data('target');
+            target = ($(this).data('target') === 'blank') ? '_blank' : '_self';
 
-            window.open(url ,'_blank');
+            window.open(url, target);
     });
 
     //for news box
