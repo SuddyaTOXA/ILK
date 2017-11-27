@@ -49,6 +49,7 @@
 }
 @media all and (max-width: 860px) {
     .wrapper {
+        min-height: auto;
         margin-bottom: 0;
     }
     .wrapper:after {
