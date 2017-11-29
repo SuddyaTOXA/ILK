@@ -164,6 +164,16 @@
     .ico-table-mob-cell.ico-name {
         width: 110px;
     }
+    .section-content .content-box {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .section-content .content-box .section-sub-title-box > *:before {
+        left: -20px;
+        width: 20px;
+    }
 }
 @media all and (max-width: 380px) {
     .ico-table-mob-box {

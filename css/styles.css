@@ -92,10 +92,10 @@ input[type="submit"]:hover,
 button:hover {
     /*opacity: 0.8;*/
 }
-.input-style::-webkit-input-placeholder { color: #4f6370; }
-.input-style::-moz-placeholder { color: #4f6370; }
-.input-style:-ms-input-placeholder { color: #4f6370; }
-.input-style:-moz-placeholder { color: #4f6370; }
+*::-webkit-input-placeholder { color: #161616; }
+*::-moz-placeholder { color: #161616; }
+*:-ms-input-placeholder { color: #161616; }
+*:-moz-placeholder { color: #161616; }
 img {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -267,10 +267,14 @@ a.btn.inverse:focus,
 *:focus:-ms-input-placeholder { opacity: 0; }
 *:focus:-moz-placeholder { opacity: 0; }
 
-#footer .input-style::-webkit-input-placeholder { color: #ffffff; }
-#footer .input-style::-moz-placeholder { color: #ffffff; }
-#footer .input-style:-ms-input-placeholder { color: #ffffff; }
-#footer .input-style:-moz-placeholder { color: #ffffff; }
+#footer .input-style::-webkit-input-placeholder,
+.boxzilla .input-style::-webkit-input-placeholder { color: #ffffff; }
+#footer .input-style::-moz-placeholder,
+.boxzilla .input-style::-moz-placeholder { color: #ffffff; }
+#footer .input-style:-ms-input-placeholder,
+.boxzilla .input-style:-ms-input-placeholder { color: #ffffff; }
+#footer .input-style:-moz-placeholder,
+.boxzilla .input-style:-moz-placeholder  { color: #ffffff; }
 
 textarea.input-style {
     max-width:100%;
@@ -306,13 +310,13 @@ div.wpcf7-validation-errors {
 .wrapper {
     position: relative;
     min-height: 100%;
-    margin-bottom: -510px;
+    margin-bottom: -500px;
 }
 .wrapper:after {
     content: '';
     display: block;
     width: 100%;
-    height: 510px;
+    height: 500px;
 }
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------HEADER---------------------------------------*/
@@ -740,9 +744,13 @@ div.wpcf7-validation-errors {
         font-size: 30px;
         margin-bottom: 15px;
     }
-    .section-content h4 {
+    .section-content h4,
+    .section-content .content-box h3 {
         font-size: 24px;
         margin-bottom: 15px;
+    }
+    .section-content .content-box h3:last-child {
+        margin-bottom: 0;
     }
     .section-content h5 {
         font-size: 20px;
@@ -870,6 +878,21 @@ div.wpcf7-validation-errors {
     }
     .section-content .section-top .content-box {
         margin-bottom: -60px;
+    }
+    .dark-overlay {
+        position: relative;
+    }
+    .dark-overlay:before,
+    .vc_row.dark-overlay:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000000;
+        opacity: 0.5;
     }
     @media all and (min-width: 768px) {
         .desktop-hidden {
@@ -1621,4 +1644,75 @@ div.wpcf7-validation-errors {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/*----------------------------------NEWSLETTER POPUP------------------------------------*/
+.boxzilla.boxzilla-contact-box {
+    padding: 20px 18px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #2d2d2d;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.boxzilla-bottom-right.boxzilla-contact-box {
+    border-bottom: none !important;
+    border-right: none !important;
+}
+.boxzilla-contact-box h1,
+.boxzilla-contact-box h2,
+.boxzilla-contact-box h3,
+.boxzilla-contact-box h4,
+.boxzilla-contact-box h5,
+.boxzilla-contact-box h6 {
+    margin-bottom: 12px;
+    color: #ffffff;
+    font: 18px/1.2 "Evolventa-Bold", Arial, sans-serif
+}
+.boxzilla-contact-box .input-style {
+    font-size: 16px;
+}
+.popup-form-list > li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.popup-form-list + .popup-btn-box {
+    margin-top: 20px;
+}
+.boxzilla-contact-box .popup-btn-box .btn {
+    padding: 8px 12px 8px;
+    min-width: 140px;
+    font-size: 16px;
+}
+.boxzilla-contact-box .boxzilla-close-icon {
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 26px;
+    padding: 4px;
+}
+.boxzilla-contact-box .boxzilla-close-icon:hover {
+    opacity: 0.95;
+}
+@-webkit-keyframes flash {
+    0%,100%,50% {
+        opacity: 1
+    }
+    25%,75% {
+        opacity: 0
+    }
+}
+@keyframes flash {
+    0%,100%,50% {
+        opacity: 1
+    }
+    25%,75% {
+        opacity: 0
+    }
+}
+.flash,
+.boxzilla-contact-box input[type=submit] {
+    -webkit-animation-name: flash;
+    animation-name: flash
 }
