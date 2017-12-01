@@ -333,40 +333,47 @@ div.wpcf7-validation-errors {
     -moz-transition: 0.35s;
     transition: 0.35s;
 }
-    #header .container {
-        max-width: 1144px;
+#header.gradient {
+    background: #0f5f8e;
+    background: -moz-radial-gradient(center, ellipse cover, #0f5f8e 0%, #001c42 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0f5f8e), color-stop(100%, #001c42));
+    background: -webkit-radial-gradient(center, ellipse cover, #0f5f8e 0%, #001c42 100%);
+    background: -o-radial-gradient(center, ellipse cover, #0f5f8e 0%, #001c42 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #0f5f8e 0%, #001c42 100%);
+    background: radial-gradient(ellipse at center, #0f5f8e 0%, #001c42 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f5f8e', endColorstr='#001c42', GradientType=1 );
+}
+    .logo {
+        float: left;
+        max-width: 150px;
+        margin-right: 20px;
+        line-height: 1;
+        -webkit-transition: 0.35s;
+        -khtml-transition: 0.35s;
+        -moz-transition: 0.35s;
+        -ms-transition: 0.35s;
+        -o-transition: 0.35s;
+        transition: 0.35s;
     }
-        .logo {
-            float: left;
-            max-width: 107px;
-            margin-right: 20px;
-            -webkit-transition: 0.35s;
-            -khtml-transition: 0.35s;
-            -moz-transition: 0.35s;
-            -ms-transition: 0.35s;
-            -o-transition: 0.35s;
-            transition: 0.35s;
+        .logo img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            margin: 4px 0;
         }
-            .logo img {
-                padding-bottom: 4px;
-                max-width: 100%;
-                max-height: 100%;
-                height: auto;
-            }
-            .logo img + span {
-                display: none;
-            }
+        .logo img + span {
+            display: none;
+        }
 /*----------------------------------------------------------------------------------*/
 /*--------------------------------------NAV-----------------------------------------*/
 /*----------------------------------------------------------------------------------*/
  .main-nav {
      /*float: right;*/
      display: table;
-     width: -webkit-calc(100% - 137px);
-     width: calc(100% - 137px);
+     width: -webkit-calc(100% - 171px);
+     width: calc(100% - 171px);
      height: 97px;
-     padding: 10px 16px 10px 0;
-
+     padding: 10px 0;
  }
     .main-nav > ul {
         display: table-cell;
@@ -386,15 +393,32 @@ div.wpcf7-validation-errors {
                 font-size: 16px;
                 text-transform: uppercase;
             }
-            body.home .main-nav .menu-item-home > a {
+            .main-nav > ul > li:first-child > a {
+                padding-left: 0;
+            }
+            .main-nav > ul > li:last-child > a {
+                padding-right: 0;
+            }
+            body.home .main-nav .menu-item-home > a,
+            body.home .gradient .sub-menu .menu-item-home > a {
                 color: #000000;
+            }
+            .gradient .main-nav > ul > li > a,
+            body.home .gradient .menu-item-home > a {
+                color: #ffffff;
             }
             .main-nav a:hover,
             .main-nav a:focus,
             .main-nav .current-menu-item > a,
             .main-nav .current-menu-ancestor > a,
+            .gradient .main-nav > ul > li > a:hover,
+            .gradient .main-nav > ul > li > a:focus,
+            .gradient .main-nav .current-menu-item > a,
+            .gradient .main-nav .current-menu-ancestor > a,
             body.home .main-nav .menu-item-home > a:hover,
-            body.home .main-nav .menu-item-home > a:focus {
+            body.home .main-nav .menu-item-home > a:focus,
+            body.home .gradient .main-nav .menu-item-home > a:hover,
+            body.home .gradient .main-nav .menu-item-home > a:focus {
                 color: #FFB72B;
                 text-decoration: none;
             }
@@ -443,7 +467,7 @@ div.wpcf7-validation-errors {
     right: 0;
     height: 0;
     width: 0;
-    top: 55px;
+    top: 56px;
     -webkit-transition-delay: 0.35s;
     -moz-transition-delay: 0.35s;
     -o-transition-delay: 0.35s;
@@ -700,7 +724,7 @@ div.wpcf7-validation-errors {
 .section-content {
     text-align: left;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 30px;
 }
 .home .section-content {
     padding: 0;
@@ -1355,9 +1379,9 @@ div.wpcf7-validation-errors {
         .news-list > li:first-child {
             width: 100%;
         }
-        .news-list > li:nth-child(4n + 1) {
+        .news-list > li:nth-child(3n + 2) {
             clear: both;
-         }
+        }
             .news-list > li > a:hover,
             .news-list > li > a:focus {
                 text-decoration: none;
@@ -1713,6 +1737,74 @@ div.wpcf7-validation-errors {
 }
 .flash,
 .boxzilla-contact-box input[type=submit] {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
     -webkit-animation-name: flash;
     animation-name: flash
+}
+.boxzilla span.wpcf7-not-valid-tip {
+    text-align: left;
+}
+
+/*----------------------------------PAGINATION------------------------------------*/
+.pagenavi-block {
+    text-align: center;
+}
+.pagenavi-block:not(:empty) {
+    margin-top: 40px;
+}
+.wp-pagenavi {
+    display: inline-block;
+    color: #2d3158;
+    font-size: 1em;
+    font-weight: 400;
+}
+.wp-pagenavi .pages {
+    display: none;
+}
+.wp-pagenavi > * {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    width: 34px;
+    height: 34px;
+    line-height: 36px;
+    text-align: center;
+    vertical-align: top;
+    color: #ffffff;
+    border: none;
+    box-shadow: none;
+}
+.wp-pagenavi > .extend {
+    color: #000000;
+}
+.wp-pagenavi > .current {
+    color: #ffffff;
+    background-color: #FFB72B;
+}
+.wp-pagenavi > :last-child {
+    margin-right: 0;
+}
+.wp-pagenavi .previouspostslink + .page,
+.wp-pagenavi .page + .nextpostslink {
+    margin-left: 5px;
+}
+.wp-pagenavi a {
+    text-decoration: none;
+    background-color: #3689bb;
+    color: #ffffff;
+}
+.wp-pagenavi a:hover,
+.wp-pagenavi a:focus {
+    text-decoration: none;
+    background-color: #FFB72B;
+}
+.wp-pagenavi a .fa {
+    position: relative;
+    top: 1px;
+    font-size: 22px;
 }
